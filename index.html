@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main_style.css">
+    </head>
+    <body class="body">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+              <a class="navbar-brand d-flex mt-3 fs-5" href="#">
+                <img src="imgs/logo@2x.png" class="w-25" alt="">
+                <div class="ms-3 fs-3 text-white ">Weather<br><span>tagline goes here</span></div>
+              </a>
+              
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto mt-3 ">
+                  <a class="nav-link1 p-3" aria-current="page" href="#">Home</a>
+                  <a class="nav-link p-3 " href="#">News</a>
+                  <a class="nav-link p-3 " href="#">Live cameras</a>
+                  <a class="nav-link p-3 " href="#">photos</a>
+                  <a class="nav-link p-3 " href="#">contant</a>                 
+                </div>
+              </div>
+            </div>
+        </nav>
+        <div class="home">
+            <div class="container">
+                <div class="input-group mb-3">
+                  <div class="input-group mb-3 d-flex">             
+                    <input type="text" class="w-75 mx-auto rounded-5 py-3 px-4 mt-5 text-white main-color" placeholder="fined your location..." id="search" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    <button class="btn mx-auto rounded-5 py-3 px-5 mt-5  text-white"  type="button" id="btn_find">Find</button>
+                  </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="item1 col-md-4 m-0 border-0 mt-4 rounded-4">
+                  <div class="d-flex justify-content-between py-2 rounded-4 px-3 text-light" id="today-date">
+                    <p id="today-date-name" class="my-auto">Sunday</p>
+                    <span>
+                      <span id="today-date-num" class="text-white">30</span>
+                      <span id="today-date-month" class="text-white">Julay</span>
+                    </span>
+                  </div>
+                  <div class="item-content text-start px-3 py-3 pt-5 text-light" id="today">
+                    <p id="today-location" class="fs-4" >cairo</p>
+                    <div class="d-flex justify-content-betweena align-items-center">
+                      <span class="fs-1 fw-bolder">
+                        <span id="today-tem" class="fs-1 text-white">20</span>
+                        <span class="fs-2 text-white"><sup>o</sup>C</span>
+                      </span>
+                      <img src="imgs/116.png" id="today-img" alt="" class="w-50">
+                    </div>
+                    <p id="today-text" class="fs-6 text-info">sunny
+                    </p>
+                    <div class="d-flex">
+                      <div class="d-flex">
+                       <p class="mt-1" id="humidity"></p>
+                       <p><img src="imgs/icon-umberella.png" class="p-2" alt=""></p>
+                      </div>
+                      <div class="d-flex">
+                        <p class="mt-1" id="wind"></p>
+                        <p><img src="imgs/icon-wind.png" class="p-2" alt=""></p>
+                       </div>
+                       <div class="d-flex">
+                        <p class="mt-1" id="direction"></p>
+                        <p><img src="imgs/icon-compass.png" class="p-2" alt=""></p>
+                       </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="item2 col-md-4  border-0 mt-4 rounded-4">
+                  <div class="py-2 text-center text-light rounded-4" id="tomorrow-date">
+                    <p class="tomorrowName my-auto" id="tomorrowName"></p>
+                  </div>
+                  <div class="item-content text-start text-light p-3 text-center pt-5" id="tomorrow">
+                    <img class=" tomorrowImag mt-5" src="imgs/113.png" alt="" id="tomorrowImag">
+                    <h3 class="text">
+                      <span class="tomorrowTemMax fs-2 text-white" id="tomorrowTemMax">45</span>
+                      <span class="fs-2 text-white"><sup>o</sup>C</span>
+                    </h3>
+                    <h3 class="text">
+                      <span class="tomorrowTemMin fs-2 text-white" id="tomorrowTemMin">16</span>
+                      <span class="fs-2 text-white"><sup>o</sup>C</span>
+                    </h3>
+                    <h5>
+                      <p class="tomorrowText fs-6 text-info mt-5" id="tomorrowText">Party Cloudy</p>
+                    </h5>
+                  </div>
+                </div>
+                <div class="item1 col-md-4  border-0 mt-4 rounded-4">
+                  <div class="py-2 text-center text-light rounded-4" id="After-tomorrow-date">
+                    <p class="tomorrowName my-auto" id="next-tomorrow-name">Friday</p>
+                  </div>
+                  <div class="item-content text-start text-light p-3 text-center pt-5" id="After-tomorrow-">
+                    <img class="tomorrowImag mt-5" src="imgs/113.png" id="next-tomorrow-img" alt="">
+                    <h3 class="text">
+                      <span class="tomorrowTemMax fs-2 text-white" id="nextTomorrowTemMax">45</span>
+                      <span class="fs-2 text-white"><sup>o</sup>C</span>
+                    </h3>
+                    <h3 class="text">
+                      <span class="tomorrowTemMin fs-2 text-white" id="nextTomorrowTemMin">16</span>
+                      <span class="fs-2 text-white"><sup>o</sup>C</span>
+                    </h3>
+                    <h5>
+                      <p class="tomorrowText fs-6 text-info mt-5" id="nextTomorrowText">Party Cloudy</p>
+                    </h5>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="connect py-5">
+          <div class="input-group mb-3">
+            <div class="input-group mb-3 d-flex">             
+              <input type="text" class="w-50 mx-auto rounded-5 py-3 px-4 mt-5 text-white main-color" placeholder="Enter your email to subscribe" id="search" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              <button class="btn2 mx-auto rounded-5 py-3 px-5 mt-5 ms-0 "  type="button" id="button">Subscribe</button>
+              <div class=" icon d-flex py-3 px-5 mt-5 ms-0">
+                <i class="fa-brands fa-facebook mx-1  fs-4"></i>
+                <i class="fa-brands fa-twitter mx-1  fs-4"></i>
+                <i class="fa-brands fa-google  mx-1 fs-4"></i>
+                <i class="fa-brands fa-pinterest mx-1  fs-4 me-2"></i>
+              </div>
+              <span class="text-white fs-6 ms-5 ps-3 mt-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</span>
+            </div>
+      </div>
+        </div>
+
+       <script src="js/bootstrap.bundle.min.js"></script>
+       <script src="js/code.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>
